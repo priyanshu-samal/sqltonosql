@@ -1,3 +1,7 @@
+html {
+    background-color: var(--background-color);
+}
+
 :root {
     --background-color: #FFFFFF;
     --grid-color: #F2F2F2;
@@ -10,15 +14,14 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--background-color);
+    background-color: transparent;
     color: var(--text-black);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-body::before {
-    content: '';
+.animated-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -311,7 +314,7 @@ h1 {
     margin-bottom: 24px;
 }
 
-.db-logos img {
+.db-logos svg {
     filter: grayscale(100%);
     opacity: 0.8;
     width: 64px;
@@ -346,13 +349,13 @@ h1 {
     flex-wrap: wrap;
 }
 
-.logos img {
+.logos svg {
     filter: grayscale(100%);
     opacity: 0.6;
     transition: opacity 0.2s ease;
 }
 
-.logos img:hover {
+.logos svg:hover {
     opacity: 1;
 }
 
